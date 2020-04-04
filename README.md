@@ -20,3 +20,10 @@ All libaryes need it in the requirment.txt
 5: login to the admin part and go to groups and add 2 groups for the permission part to work create [admin] and [customer]
 
 6: for the mail part to work go to settings.py in the djangowebserver folder and under the SMTP Configuration add in EMAIL_HOST_USER add gmail and EMAIL_HOST_PASSWORD add gmail password
+
+-- If you dont see any models in the /admin part then make a quick migrate to do that
+- 1: python manage.py makemigrations
+
+- 2 python manage.py migrate
+
+- and that should fix the model problem
